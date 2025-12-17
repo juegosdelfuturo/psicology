@@ -12,12 +12,12 @@ export const Button: React.FC<ButtonProps> = ({
   className = '', 
   ...props 
 }) => {
-  const baseStyles = "px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
+  const baseStyles = "px-8 py-4 rounded-2xl font-bold tracking-tight transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transform active:scale-[0.98]";
   
   const variants = {
-    primary: "bg-teal-600 text-white hover:bg-teal-700 focus:ring-teal-500 shadow-md hover:shadow-lg",
-    secondary: "bg-teal-100 text-teal-800 hover:bg-teal-200 focus:ring-teal-500",
-    outline: "border-2 border-teal-600 text-teal-600 hover:bg-teal-50 focus:ring-teal-500"
+    primary: "bg-slate-900 text-white hover:bg-slate-800 focus:ring-slate-200 shadow-[0_10px_30px_rgba(15,23,42,0.15)] hover:shadow-[0_15px_40px_rgba(15,23,42,0.2)]",
+    secondary: "bg-sage-100 text-sage-800 hover:bg-sage-200 focus:ring-sage-100",
+    outline: "border-2 border-slate-900 text-slate-900 hover:bg-slate-50 focus:ring-slate-100"
   };
 
   return (

@@ -25,4 +25,5 @@ export interface BookingData {
   therapist: Therapist | null;
   date: string | null;
   time: string | null;
+  paid?: boolean;
 }

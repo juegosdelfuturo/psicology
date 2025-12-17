@@ -3,32 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Next Step Student Sessions</title>
+    <title>gofeelbetter | Experienced Student Psychologists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              teal: {
-                50: '#f0fdfa',
-                100: '#ccfbf1',
-                500: '#14b8a6',
-                600: '#0d9488',
-                700: '#0f766e',
-                900: '#134e4a',
+              sage: {
+                50: '#f4f7f5',
+                100: '#e5ebe6',
+                200: '#cedad1',
+                300: '#abbfb2',
+                400: '#829e8c',
+                500: '#647f6d',
+                600: '#4e6456',
+                700: '#405147',
+                800: '#35423a',
+                900: '#2d3731',
+              },
+              emerald: {
+                600: '#059669',
+                700: '#047857',
               },
               slate: {
-                850: '#1e293b',
+                950: '#020617',
               }
             },
             fontFamily: {
-              sans: ['Inter', 'system-ui', 'sans-serif'],
+              sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
             }
           }
         }
       }
     </script>
+    <style>
+      body {
+        background-color: #f4f7f5;
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(145,15%,92%,1) 0, transparent 50%), 
+          radial-gradient(at 50% 0%, hsla(160,20%,94%,1) 0, transparent 50%), 
+          radial-gradient(at 100% 0%, hsla(145,15%,92%,1) 0, transparent 50%);
+        min-height: 100vh;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      /* Custom styling for the stripe button container */
+      .stripe-container stripe-buy-button {
+        width: 100% !important;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
@@ -42,7 +81,7 @@
 }
 </script>
 </head>
-  <body class="bg-gray-50 text-slate-800 antialiased">
+  <body class="text-slate-900 antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
